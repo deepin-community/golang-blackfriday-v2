@@ -1,0 +1,37 @@
+Source: golang-blackfriday-v2
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: Reinhard Tartler <siretart@tauware.de>
+Section: devel
+Testsuite: autopkgtest-pkg-go
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               dh-golang,
+               golang-any,
+               golang-github-pmezard-go-difflib-dev,
+               golang-github-shurcool-sanitized-anchor-name-dev,
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-blackfriday-v2
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-blackfriday-v2.git
+Homepage: https://github.com/russross/blackfriday
+Rules-Requires-Root: no
+XS-Go-Import-Path: github.com/russross/blackfriday/v2
+
+Package: golang-github-russross-blackfriday-v2-dev
+Architecture: all
+Depends: ${misc:Depends},
+         golang-github-pmezard-go-difflib-dev,
+         golang-github-shurcool-sanitized-anchor-name-dev,
+Description: Blackfriday: a markdown processor for Go version 2
+ Blackfriday (github.com/russross/blackfriday) is a Markdown processor
+ implemented in Go. It is paranoid about its input (so you can safely feed it
+ user-supplied data), it is fast, it supports common extensions (tables, smart
+ punctuation substitutions, etc.), and it is safe for all utf-8 (unicode)
+ input.
+ .
+ HTML output is currently supported, along with Smartypants extensions. An
+ experimental LaTeX output engine is also included.
+ .
+ It started as a translation from C of upskirt.
+ .
+ This package contains the 'v2' branch, which is largly, but not fully, source
+ compatible with the golang-github-russross-blackfriday-dev package
