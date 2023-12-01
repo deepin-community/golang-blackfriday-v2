@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Source: https://github.com/russross/blackfriday
 Upstream-Name: russross/blackfriday
 Upstream-Contact: https://github.com/russross/blackfriday/issues/new
-Source: https://github.com/russross/blackfriday
 
 Files: *
 Copyright: 2011 Russ Ross
